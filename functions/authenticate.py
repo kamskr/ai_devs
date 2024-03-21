@@ -18,8 +18,6 @@ def authenticate(taskName):
         AI_DEVS_API_URL + f'/token/{taskName}', json=data)
 
     if response.status_code == 200:
-        print("Authentication successful")
-        print(response.text)
         return response.json()['token']
     else:
         print("Authentication failed")

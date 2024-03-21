@@ -16,7 +16,6 @@ def getTask(token):
         AI_DEVS_API_URL + f'/task/{token}')
 
     if response.status_code == 200:
-        print(response.json())
         return response.json()
     else:
         print("Task retrieval failed")
