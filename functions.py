@@ -17,7 +17,6 @@
 from functions.answer import answer
 from functions.get_task import getTask
 from functions.authenticate import authenticate
-from openai import OpenAI
 from dotenv import load_dotenv
 import os
 import json
