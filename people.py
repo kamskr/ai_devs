@@ -69,14 +69,14 @@ print(context)
 completion = open_ai.chat.completions.create(
     model="gpt-4",
     messages=[
-        {"role": "system", "content": f"Context: {context}", },
+        {"role": "system", "content": f"{context}", },
         {"role": "user", "content": f"{question}"}
     ]
 )
 
 result = completion.choices[0].message.content
 
-print(result)
+print(completion)
 
 
 answer_data = {
