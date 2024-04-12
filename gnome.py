@@ -26,6 +26,7 @@ task_formatted = json.dumps(task, indent=2)
 print(task_formatted)
 
 client = OpenAI()
+
 response = client.chat.completions.create(
     model="gpt-4-turbo",
     messages=[
